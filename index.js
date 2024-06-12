@@ -14,7 +14,6 @@ console.log("Chabahil");
 console.log(1+1);*/
 
 
-
 // console.log("a" + "b");
 // console.log("a" + "1");
 
@@ -26,9 +25,13 @@ console.log(age, name, address) ;
 age = 30;
 console.log(age);*/
 
-let num1 = 1;
-let num2 =  2;
-console.log("a" - "a");
-console.log(`The  result of num1 and num2   = ${num1 + num2}`);
+// console.log("a" - "a");
+// let num1 = 1;
+// let num2 =  2;
+// console.log(`The  result of num1 and num2   = ${num1 + num2}`);
+
+console.log(javascripy);
+
+console.log(java)
 
 
