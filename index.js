@@ -85,13 +85,13 @@ console.log(e); */
 
 
 // if-else
-
-/* let a = true;
+/* 
+ let a = false;
  if(!a) {
 console.log("i am if");
  }else{ 
 console.log("i am else");
- } */
+ }  */
 
 //  in if else condition is always block in always wrapped by paranthesis
 /* () => parantesis
@@ -120,15 +120,138 @@ if (name === 'hari'){
     } */
 
 
-//if the value is true ! makes it false and vice-verse
-// !! makes or converts the value into boolen
+//if the value is true then not(!) makes it false and vice-verse
+// double not (!!) makes or converts the value into boolen
 
- let name = 'anish';
+/*  let name = 'anish';
 if(!name ){
     console.log('a');
 }else{
     console.log('b');
-} 
+}  */
+
+
+
+    //function, function define, call function, function pass by value,return, arrow function
+
+/*     let fun1 = function(){
+        console.log("i am function")
+    };
+// A function will not execute unless it is not called. we have to call function  to execute the functon 
+ // code block
+console.log("a")
+fun1();
+console.log('b') */
+
+
+//value pass=>
+   /*  let fun1 = function(a,b,c){   //parameter
+        console.log("i am function");
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(a+b);
+        console.log(a+b+c);
+        console.log(a*b*c)
+    };
+/*     fun1(1,2,3);   //argumrnts
+let mul =  function (a,b,c){
+let d = a*b*c;
+console.log(d)
+};
+mul(3,4,5); 
+*/
+//defult value
+/* let fun1 =  function(a,b,c=9){
+console.log(a)
+console.log(b)
+console.log(c)
+};
+fun1(1,2,3); */
+
+// it is not nessesery to have same num of arrguments and parameters.
+
+
+
+//funtion with return
+/* let fun1 =  function(){
+return 5; //last line of function
+console.log(a) //unreachable code.
+}
+let data = fun1();
+console.log(data); */
+
+//Function without return : call normally fun1()
+//Function  with return : let data = fun1(), call by storing it in a variable.
+
+
+//let fun1 = function(){}; traditional method
+//let fun1 =()=> {} morden arrow function
+// ()=>{}  need to be remember every time for arrow funtion.
+
+/* let age =  18;
+let fun1 =  ()=>{
+    if(age > 17){ 
+        console.log("He  can  go to club")
+    }else{
+        console.log("He can not go to club")
+    }
+};
+let data = fun1(); */
+
+/* let add =  (num1,  num2) => {
+    // let num3 = num1  + num2;
+    // return num3;
+    return num1 + num2; //this is better approche.
+};
+// it is necessry to store the variable after you pass return to function.
+//java script function only return one value.
+let sum = add(8,9);
+console.log(sum); */
+/* 
+let name =  "anish"
+console.log(name)
+name = "rijan"
+console.log(name) */
+
+//javaScript is a dynamic langauge because a variable can be stored diff value at a diff time.
+/* 
+const name =  "ram";
+console.log(name);
+name =" hari";
+console.log(name); */
+
+
+//import and export:
+
+
+//date:/* 
+/* console.log(new Date());
+It gives the current date and time. new Date() gives in is format: yyy-mm-ddhh:mm:ss
+console.log(new Date().toDateString());
+console.log(new Date().toLocaleString());
+console.log(new Date().toLocaleTimeString());
+console.log(new Date().toLocaleDateString());  */
+
+//length:
+/* let name = 'anish adk';
+console.log(name.length); */
+
+//toLowerCase 
+/* let name = "AnISH";
+console.log(name.toLowerCase()); */
+
+//replaceAll
+/* let name = 'tree';
+console.log(name.replaceAll("t","m")); */
+
+//UpperCase:
+let name = "mango";
+console.log(name. toUpperCase());
+
+
+
+
 
 
 
