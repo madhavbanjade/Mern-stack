@@ -154,7 +154,8 @@ console.log('b') */
         console.log(a+b+c);
         console.log(a*b*c)
     };
-/*     fun1(1,2,3);   //argumrnts
+//     fun1(1,2,3);   arrgumrnts
+/*  
 let mul =  function (a,b,c){
 let d = a*b*c;
 console.log(d)
@@ -205,7 +206,7 @@ let data = fun1(); */
     return num1 + num2; //this is better approche.
 };
 // it is necessry to store the variable after you pass return to function.
-//java script function only return one value.
+//java script function has only one return  value.
 let sum = add(8,9);
 console.log(sum); */
 /* 
@@ -215,23 +216,24 @@ name = "rijan"
 console.log(name) */
 
 //javaScript is a dynamic langauge because a variable can be stored diff value at a diff time.
-/* 
-const name =  "ram";
+
+/* const name =  "ram";
 console.log(name);
-name =" hari";
-console.log(name); */
+
+let name1 =  "hari";
+console.log(name, name1); */
 
 
 //import and export:
 
 
 //date:/* 
-/* console.log(new Date());
-It gives the current date and time. new Date() gives in is format: yyy-mm-ddhh:mm:ss
+ console.log(new Date());
+//It gives the current date and time. new Date() gives in is format: yyy-mm-ddhh:mm:ss
 console.log(new Date().toDateString());
 console.log(new Date().toLocaleString());
 console.log(new Date().toLocaleTimeString());
-console.log(new Date().toLocaleDateString());  */
+console.log(new Date().toLocaleDateString());  
 
 //length:
 /* let name = 'anish adk';
@@ -246,8 +248,8 @@ console.log(name.toLowerCase()); */
 console.log(name.replaceAll("t","m")); */
 
 //UpperCase:
-let name = "mango";
-console.log(name. toUpperCase());
+// let name = "mango";
+// console.log(name. toUpperCase());
 
 
 
