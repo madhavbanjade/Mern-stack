@@ -226,16 +226,16 @@ console.log(name, name1); */
 
 //import and export:
 
-
+/* 
 //date:/* 
  console.log(new Date());
 //It gives the current date and time. new Date() gives in is format: yyy-mm-ddhh:mm:ss
 console.log(new Date().toDateString());
 console.log(new Date().toLocaleString());
 console.log(new Date().toLocaleTimeString());
-console.log(new Date().toLocaleDateString());  
-
-//length:
+console.log(new Date().toLocaleDateString());  */ 
+ 
+//length:          
 /* let name = 'anish adk';
 console.log(name.length); */
 
@@ -250,6 +250,202 @@ console.log(name.replaceAll("t","m")); */
 //UpperCase:
 // let name = "mango";
 // console.log(name. toUpperCase());
+
+
+ //loop:;
+
+ //intialazation
+ //condition
+ //afterthought
+
+/*  let i;
+ //i=0;
+ for(i = 0; i < 3; i = i+1){
+    console.log(i);
+    //i = i+1 
+    };
+ */
+
+
+/*  1.   initilization only runs at first.
+2. condition runs until it meets the requirments.
+3. (afterthought) is also exceuted evertime if loobody is excecuted
+4. for loop repets until a specified condition evaluates to false. */
+
+
+//while loop
+/* 
+let i = 0;
+while(i<2)
+{
+    console.log(i);
+    i = i+1;
+} */
+
+/* . if the condition become false, statement with in the loop stops executing */
+
+/* 
+    // do while loop:
+    let i = 0;
+    do{
+        console.log(i);
+        i = i + 1;
+
+    }while(i < 2);
+
+    //statement is always executed once before the condition is checked. */
+
+
+    //Array = []:
+    // map => return (map contains always )
+    //syntax:
+    /*  list.map ((value , index)=> {
+     return     }) */
+//map is very important for frontend and backend always remember:
+
+/* let list = ['a','b','c'];   //value and index:
+let output = list.map( (value , index)=> {
+   // return 6;
+   // return value;
+  // return index;
+   //return `${value}${index}`;
+console.log("anish");
+return index;   //same for value and value + index:
+});
+console.log(output);  */
+
+
+//use map method if both input and output arrays are same and both input and output length are same.
+//[1,2,3,4] = [2,4,6,8]
+
+/* let list = [1,2,3,4]
+let output = list.map((value , index)=>{
+    return value * 2;
+});
+console.log(output); */
+
+/* 
+//   let fun1 = (inputArr)  => {
+//   let output =  inputArr.map((value,index)=>{
+//     return value*2;
+//   });
+//   return output;
+// };
+// let fun = fun1([2,4,6,8])
+// console.log(fun); */
+
+
+/* //split => string to array => "" => []
+//join => array to string => [] => ""
+console.log("anish".split("i"));
+console.log("anish".split(""));
+console.log(["a","n","i","s","h"].join("*"));
+console.log(["a","n","i","s","h"].join("")); */
+
+ 
+//filter:  mostly used
+//filter only returns true or false.
+
+/* let list = ['a','b','c'];
+let list1 = list.filter((value,index)=>{
+   // return false;
+   return true;
+});
+console.log(list1); */
+
+/* let list = ['a','b','c','d','e']
+let output = list.filter((value,index)=>{
+    if(value === "e"){   // if (value === "f"){}else{}
+        return true;
+
+    }else{
+
+
+
+
+        return false;
+    }
+});
+console.log(output); */
+
+//[1,2,3,4] = [2,4,6,8] for mapping
+//[1,2,3,4] = [2,4]  => vaid filter
+//[1,2,3,4] = [1,3,4,5]  => invalid filter
+
+/* let input = [1,2,3,6];
+let output = input.filter((value,index)=>{
+    if(value %  2 === 0){
+        return true;
+    }else{
+return false;
+    }
+});
+console.log(output); */
+
+
+
+/* //find : 
+let list =  [1,2,3,4];
+let list1 = list.find((value,index)=> {
+    return true;
+});
+console.log(list1);
+ */
+
+/* //true and false: boolen only prints true value..
+let input = ["ram", 1, "", 0,undefined, null, 'madhav'];
+let output = input.filter(Boolean); 
+console.log(output);
+ */
+
+// QNS:["ram","hari","shayam","roshan"] =>
+    //print the value of array which is greater than 4
+/* //ans:
+let data = ["ram","hari","shayam","roshan"];
+let output = data.filter((value,index)=>{
+    if(value.length > 4 ){
+        return true;
+    }else{
+        return false;
+    }
+});
+console.log(output); */
+
+/* 
+//for each: no return 
+let list = [1,2,3];
+let output = list.forEach((value,index)=> {
+    console.log(value);
+}) */
+
+
+    /* //includes: return true and false only
+    let list = ["ram","hari","shayam","roshan"]
+    let output =  list.includes("ram");  //anish -> false
+    console.log(output); */
+/* 
+    //push -> push value to last
+    //pop -> remove last value
+    //unshift -> push value to first
+  //shift  -> remove first value
+let list = [1,2,3,4];
+//  list.push(5);
+ //list.pop();
+// list.unshift(8);
+// list.shift();
+console.log(list); */
+
+
+//sort : mostly used in terms -> 
+//let list =  ['d','r','k','z','a',"S"]   //sorting according to their percistency
+let list = ["anish","madhav","roshan","zed","john","sudha","Anis"]
+//only vaid for string but not for number. number has its another story.
+let output = list.sort()
+console.log(output);
+
+
+
+
 
 
 

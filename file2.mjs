@@ -1,8 +1,11 @@
-import { fun, mul } from "./file1.mjs";
-
-let data =  (mul(3,4));
-console.log(data);
-
+// import { fun, mul } from "./file1.mjs";
+// let data =  (mul(3,4));
+// console.log(data);
 
 
-console.log(name);
+// let data1 =  fun()
+// console.log(name);
+
+import  fun1  from "./file1.mjs";
+let fun = fun1([2,4,6,8]);
+console.log(fun);
