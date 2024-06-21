@@ -297,7 +297,7 @@ while(i<2)
 
 
     //Array = []:
-    // map => return (map contains always )
+    // map => map always contains return
     //syntax:
     /*  list.map ((value , index)=> {
      return     }) */
@@ -384,13 +384,16 @@ console.log(output); */
 
 
 
-/* //find : 
+//find : if the return value is true it prints the intial value of the list item.
+
+
+/* 
 let list =  [1,2,3,4];
 let list1 = list.find((value,index)=> {
-    return true;
+    return false;
 });
-console.log(list1);
- */
+console.log(list1); */
+ 
 
 /* //true and false: boolen only prints true value..
 let input = ["ram", 1, "", 0,undefined, null, 'madhav'];
@@ -435,22 +438,292 @@ let list = [1,2,3,4];
 // list.shift();
 console.log(list); */
 
-
+/* 
 //sort : mostly used in terms -> 
 //let list =  ['d','r','k','z','a',"S"]   //sorting according to their percistency
 let list = ["anish","madhav","roshan","zed","john","sudha","Anis"]
 //only vaid for string but not for number. number has its another story.
 let output = list.sort()
-console.log(output);
+console.log(output); */
+/* 
+let name = ["madhav","ramey","arbin","Sushil"];
+let output = name.sort();
+console.log(output); */
+/* 
+//slice : works on index
+let list = [1,2,3,4];  
+let newlist = list.slice(2); // -1 for the last value of the data
+console.log(newlist); */
+
+/* //reduce:
+ //list.reduce(function,intialValue)
+ //list.reduce(()=>{},o);
+ //find the sum of all elements of array?
+let list = [1,2,3,4];
+let newList = list.reduce((previous,current)=>{
+    return previous + current;
+},0); // we can use any value for intiall according to the conditions:
+console.log(newList); */
+
+/* 
+//Find the sum of all even elements of an array?
+let input = [1,2,3,5,8,10];
+let output = input.filter((value,index)=>{
+if(value %2 === 0){
+    return true;
+}else{
+    return false;
+}
+});
+let sum = output.reduce((previous,current)=>{  //((pre,curr)=>{},0)
+    return previous + current;
+}, 0);
+console.log(sum); */
+
+
+//OBJECT: syntax -> {},[{},{},{},{}];   key and pair also called key value of pair..
+//Array is a collection of values wheres onject is a  collection of key value pairs.
+//key value pairs are called propertiy.
+/* 
+let info = {
+    name: "ram",
+    age: 29,
+    address: "kathmandu",
+    isMarrired: false, 
+};
+//get value
+console.log(info.name);  // bollen value = undefined
+console.log(info.age);  
+console.log(info);  
+//change value 
+info.name = "hari";
+info.age = 26;
+console.log(info)
+//delete value
+delete info.isMarrired;
+console.log(info) */
+
+/*
+//  in object if the value is changed after declearig it it will print the last value.
+//duplicate key does not exist , if exist override by the below code.
+let data = {
+    name:"ram",
+    age: 45,
+    name : "hari",
+};
+console.log(data.name); */
+
+
+//real life implementation:
+/* 
+let data = {
+    name : "ram",
+    favFruits: ["apple","orange"],
+    location: {
+         country: "Nepal",
+         province: "Bagmati",
+         city: "Kathmandu",
+    }, 
+    age : function() {
+        console.log("My name is ram. I am 24 years old");
+    },
+};
+console.log(data.favFruits[1]);
+console.log(data.location.province);
+data.age(); */
+
+
+/* //Alias:  alias means changing the variable name.
+//once you change variable name you can access  by its  changed name.
+let {name:fullName,
+     age: year,
+      isMarried,
+} =  {
+    name: "ramey",
+    age: 35,
+    isMarried: false,
+};
+console.log(fullName,year);
+ */
+
+/* 
+//this keyword : only works inside the object.
+let info = {
+    name :  "Madhav",
+    surName : "Banjade",
+    fullName: function (){
+        console.log(this.name);
+        console.log(this.surName);
+    },
+};
+//console.log(info.name);
+//console.log(this.name); -> error
+info.fullName(); */
+
+
+/* 
+//array Destuctor:
+let planet =  ["moon","sun", "venus"];
+//let planet1 = planet[0];
+//planet2 = planet[1];
+// let [a,b,c] = planet;    
+let [a,b,c, d =" mercury"] = planet;    //defult value  
+console.log(a,b,c,d); */
+
+/* 
+//SPREAD OPERTATOR =>   ...  (mostly used)
+let planet = ["sun","moon","pluto"];
+let [planet1, ...rest] =  planet; // you can write anything in place of rest.
+console.log(planet1);
+console.log(rest);   // rest change the remening data into the array. */
+
+/* 
+let name = ['anish','ram','hari','shyam'];
+let data = ['school','kathmandu','Nepal'];
+let totalData =  [...name ,"This is my data", ...data];
+console.log(totalData);   // ...spread operater is only return inside the array. */
+
+
+/* let list = [
+    { name : "mobile", price: 10000},
+    {name: "Battery", price: 8000},
+    {name:  "earphone", price: 5000},
+    {name:  "charger", price: 2000},  
+];
+let newlist = list.sort((a,b)=>{
+    return a.price - b.price;
+});
+console.log(newlist) */
+
+/* //Number sort :
+let list = [3,1,4,2];
+let output =  list.sort((a,b)=>{
+    //return a-b;   //accending
+    return b - a;   //decending
+})
+console.log(output); */
+/* 
+//sort array according to array.
+let list = ["ram","anish", "javascript",'az',"john","hari"];
+let output =  list.sort((a,b)=>{
+return a.length - b.length;
+})
+console.log(output);  */
+/* 
+//convert  object into Array:
+let info =  {
+    name : 'ram',  // total is property
+    age: 30,
+    isMarried: false,
+};
+let keysArray = Object.keys(info);
+console.log(keysArray);
+let valueArray = Object.values(info);
+console.log(valueArray);
+let propertyArray = Object.entries(info);   
+console.log(propertyArray);    //array of array */
 
 
 
+// convert array into object: we can only change array of array
+/* 
+let  info = [
+    ["name", anish],
+    ['age', 26],
+    ["is married", false],
+];
+let output =  Object.fromEntries(info);
+console.log(output); */
+
+//math
+// let data =  Math.random();
+// console.log(data);
+
+// let data =  Math.random()*2
+// console.log(data);
+
+/* let data =   Math.ceil(1.22);  // .ceil increase the value
+console.log(data);
+let data1 = Math.floor(1.99);  //.floor decrease the value  
+console.log(data1); */
+
+//Scope 
+//{} = block 
+// {
+//     let a =   1;
+//     console.log(a);
+// }
+// console.log(a);
+//A variable will be known with in its block for the line where it is defined.
+
+/* 
+//{{}} ==> child block and parent block
+{   //parent block
+let a =  1;
+{   // child block
+    console.log(a);
+
+}
+console.log(a);
+}
+// when a variable is called, first it is searched in its own block, if the variable is not find
+//in the block then it  will search for its parent block. */
+
+/* 
+{
+    let a = 1;
+    {
+      a = 10;
+      console.log(a);
+    }
+    console.log(a)
+}
+
+//A variable can not be redfined in the  same block. but we can redefined same variable 
+//  in  diffrent  block. */
+
+/* 
+// == or ===
+console.log('1' == 1); // true , it only check   value
+console.log('1 ' === 1); //fa;se , it sees value and type */
 
 
+/* 
+//NaN 
+console.log(1+1);
+console.log('a' * 'b' ); 
+//undefined
+let a;
+console.log(a);
+//undefined means variable is defined but not initialized  */
 
+/* 
+//Rest or spread    ...
+let {name, ...rest}= {
+    name: ' ram', age : 20, isMarried : true,};
+console.log(name);
+console.log(rest) */
 
+/* 
+let sum =  (a,...b)=> {
+console.log(a);
+console.log(b);
+}
+sum (1,2,2,3,3,4,5,56,); */
 
+/* 
+//spread
+let arr = [  1,2,3,4,5];
+let arr1 = ["ram","john", " tim"];
+let output = [2,4, ...arr1, 6,8, ...arr, "javascript"];
+console.log(output); */
 
+let info =  {
+    name: 'ram', age: 24, isMarried: true};
+    let info1 =  {...info};
+console.log(info1);
+let info2 =  {...info, location: "kathmandu"};
+console.log(info2)
 
 
 
